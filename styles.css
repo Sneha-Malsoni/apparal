@@ -1,0 +1,211 @@
+*{
+padding: 0;
+margin: 0;
+    box-sizing: border-box;
+
+    font-family:"Josefin Sans";
+}
+
+.container{
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    height: 100vh;
+}
+
+.hero-container{
+    display: flex;
+
+}
+.Hero-desktop{
+width: 100%;
+    min-width: 600px;
+}
+
+.Hero-mobile{
+    display: none;
+    width: 100%;
+}
+
+.content-wraper{
+    background: url("./images/bg-pattern-desktop.svg");
+    background-size: cover;
+padding: 5rem 2rem 0 10rem;
+}
+.desktop-logo{
+
+    display: block;
+    }
+
+.logo-container{
+
+    display: none;
+}
+ .logo{
+
+    object-fit: contain;
+} 
+
+.we-are{
+
+    margin: 5rem 2rem  0 0;
+    font-size: 3em;
+    font-weight: 300;
+    text-transform: uppercase;
+    color:  hsl(0, 80%, 86%);
+    letter-spacing: 0.2em;
+}
+
+.soon{
+    margin-bottom: 0.5em;
+    color: hsl(0, 6%, 24%);
+    font-size: 3em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    width: 50%;
+    line-height: 1.2em;
+}
+.description{
+margin-bottom: 2rem;
+ line-height: 1.2rem;
+ color: hsl(0, 60%, 75%);
+ width:60%;
+ min-width: 400px;
+
+}
+
+form{
+width:"100%";
+    position: absolute;
+
+}
+.input-container{
+min-width: 400px;
+width: 65%;
+}
+
+#email{
+    border: 1px solid hsl(0, 60%, 75%);
+    border-radius: 50px;
+    outline: none;
+    height: 50%;
+    width: 70%;
+    padding: 1em 2em ;
+    margin-left: 0.2em;
+    background: transparent;
+}
+
+.danger-button{
+
+    color: hsl(0, 92%, 59%);
+    position: absolute;
+    height: 25px;
+    border-radius: 50%;
+    width: 25px;
+    transition: .5s;
+opacity: 0;
+}
+
+.danger-text{
+
+    color: hsl(0, 91%, 58%);
+    margin-left: 2em;
+    opacity: 0;
+
+    font-weight: 600;
+}
+
+
+.button{
+background:linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+height: 55px;
+border: none;
+ outline:none;
+border-radius: 50px;
+width: 90px;
+cursor: pointer;
+
+transform:translate(-55% , 3px);
+box-shadow: 0 10px 30px -5px rgb(226, 135, 135);
+}
+
+@media screen and(max-width:1000px){
+    .Hero-desktop{
+        min-width: 400px;
+    }
+}
+@media screen and(max-width :768px)
+{
+.container{
+height: initial;
+flex-direction: column;
+}
+.content-wraper{
+    padding:0;
+}
+.logo-container{
+    display: block;
+}
+.logo{
+    padding: 2em;
+}
+
+.we-are{
+    font-size: 2.5rem;
+    margin:1.5em 0 0 0;
+    text-align: center;
+    width: 100%;
+}
+
+
+.Hero-desktop{
+    display: none;
+
+}
+
+.Hero-mobile{
+    display: block;
+}
+
+.soon{
+
+    width: 100%;  
+    font-size: 2.5rem;
+    text-align: center;
+    padding:0 3em;
+}
+.description{
+
+text-align: center;
+    font-size: 0.8em;
+    width:"100%";
+padding: 0 3.5em;
+}
+
+.input-container{
+   width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+
+    .danger-text{
+
+        text-align: center;
+    }
+    
+    
+    .button{
+   
+    position:absolute;
+  
+    
+    transform:translate(-55%);
+height: 50px;
+    }
+
+
+}
